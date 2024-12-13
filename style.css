@@ -137,7 +137,7 @@ h1 {
   }
   .sticky-top-md {
     position: sticky;
-    top: 0; /* Define the sticky offset */
+    bottom: 0; /* Define the sticky offset */
   }
 
 
