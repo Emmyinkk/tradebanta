@@ -10,10 +10,10 @@ body {
     padding: 0;
     font-family: "Host Grotesk", sans-serif;
     background-color: black;
-    background-image: url(assets/Noise.png), url(assets/Pattern.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: center center, center center;
-    background-size: cover, 100%;
+    background-image: url(assets/Noise.png), url(assets/Pattern.png), url(assets/099.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center center, center center, center center;
+    background-size: cover, cover, cover;
     /* background-attachment: fixed; */
     background-blend-mode: normal;
 }
@@ -71,12 +71,12 @@ a {
 /* .curved {
     
 } */
-.phone {
+/* .phone {
     background-image: url(assets/099.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 60%;
-}
+    background-size: 100%;
+} */
 .baseImage {
     height: 523px;
 }
@@ -148,14 +148,6 @@ a {
   }
 
   @media only screen and (max-width: 1199px) {
-    .curved {
-        right: -120px;
-        left: auto;
-    }
-  }
-
-
-  @media only screen and (max-width: 767px) {
     body {
         margin: 0;
         padding: 0;
@@ -168,6 +160,14 @@ a {
         /* background-attachment: fixed; */
         background-blend-mode: normal;
     }
+    .curved {
+        right: -120px;
+        left: auto;
+    }
+  }
+
+
+  @media only screen and (max-width: 767px) {
     .logo {
         width: 95px;
         height: 40px;
