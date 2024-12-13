@@ -184,4 +184,7 @@ h1 {
         width: 250px;
         height: 75px;
     }
+    .scroll-container img {
+        width: 90%;
+    }
   }
