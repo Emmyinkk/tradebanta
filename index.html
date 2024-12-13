@@ -9,8 +9,8 @@
     <title>TradeBanta</title>
 </head>
 <body>
-    <nav class="container d-flex justify-content-center align-items-center mb-3">
-        <a href="#"><img src="assets/logo.png" alt="logo"></a>
+    <nav class="container d-flex justify-content-center align-items-center py-5">
+        <a href="#"><img src="assets/logo.png" alt="logo" class="logo"></a>
     </nav>
     <div class="hero">
         <div class="container">
@@ -29,7 +29,8 @@
                 </div>            
             </div>
            
-                <img src="assets/097.png" alt="curved line" class="position-absolute curved d-none d-xl-block">
+                <img src="assets/097.png" alt="curved line" class="position-absolute curved d-none d-md-block">
+                <img src="assets/084.png" alt="curved line" class="position-absolute curved d-block d-md-none">
             
         </div>
     </div>
@@ -64,17 +65,20 @@
     </div>
     <footer class="sticky-top-md py-3 mt-2">
         <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3 gap-sm-0">
+            <a href="https://t.me/tradebanta" class="text-center comm py-2 px-4 d-md-none">
+                <p class="mb-0 text-black">Join our community</p>
+            </a>
             <div class="d-flex gap-2 align-items-center">
-                <div>
+                <div class="d-none d-md-block">
                     <img src="assets/088.png" alt="image">
                 </div>
                 <p class="mb-0 text-light email">hello@tradebanta.com</p>
             </div>
-            <div class="text-center comm py-2 px-4">
-                <p class="mb-0">Join our community</p>
-            </div>
+            <a href="https://t.me/tradebanta" class="text-center comm py-2 px-4 d-none d-md-block">
+                <p class="mb-0 text-black">Join our community</p>
+            </a>
             <div class="d-flex justify-content-between align-items-center gap-3">
-                <p class="mb-0 text-light">Connect</p>
+                <p class="mb-0 text-light d-none d-md-block">Connect</p>
                 <a href="https://x.com/TradeBanta" target="_blank"><img src="assets/087.png" alt=""></a>
                 <a href="https://instagram.com/tadebanta" target="_blank"><img src="assets/086.png" alt=""></a>
                 <a href="https://linkedin.cim/company/tradebanta" target="_blank"><img src="assets/085.png" alt=""></a>
@@ -84,7 +88,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         // Target date and time (edit to match your desired launch date)
-        const targetDate = new Date("2024-12-31T23:59:59");
+        const targetDate = new Date("2025-01-20T23:59:59");
       
         function updateCountdown() {
           const now = new Date();

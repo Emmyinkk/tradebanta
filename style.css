@@ -14,7 +14,7 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-position: center center, center center;
     background-size: cover, 100%;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-blend-mode: normal;
 }
 h1 {
@@ -27,6 +27,9 @@ h1 {
     color: white;
     max-width: 866px;
     margin: 0 auto;
+}
+a {
+    text-decoration: none;
 }
 .hero p {
     font-size: 18px;
@@ -45,6 +48,10 @@ h1 {
     margin-top: -.4rem;
 }
 .countdown {
+    max-width: 428px;
+    margin: 0 auto;
+}
+.countdown p {
     color:rgba(188, 235, 0, 1);
     font-size: 20px;
     font-weight: 500;
@@ -55,7 +62,8 @@ h1 {
 }
 .curved {
     top: -120%;
-    left: 73%;
+    left: auto;
+    right: -120px;
     transform: translate(-50%, -50%);
     width: 100.5px;
     height: 103.5px;
@@ -130,8 +138,7 @@ h1 {
    bottom: 0;
   }
   .comm {
-    color: rgba(188, 235, 0, 1);
-    background: black;
+    background: rgba(188, 235, 0, 1);
     border: 1px solid rgba(188, 235, 0, 1);
     border-radius: 24px;
   }
@@ -140,18 +147,51 @@ h1 {
     bottom: 0; /* Define the sticky offset */
   }
 
+  @media only screen and (max-width: 1199px) {
+    .curved {
+        right: -120px;
+        left: auto;
+    }
+  }
+
 
   @media only screen and (max-width: 767px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Host Grotesk", sans-serif;
+        background-color: black;
+        background-image: url(assets/Noise.png), url(assets/Pattern.png), url(assets/083.png);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: center center, center center, center center;
+        background-size: cover, cover, cover;
+        /* background-attachment: fixed; */
+        background-blend-mode: normal;
+    }
+    .logo {
+        width: 95px;
+        height: 40px;
+    }
     h1 {
-        font-size: 36px;
-        line-height: 49.52px;
+        font-size: 32px;
+        line-height: 45.44px;
+        max-width: 323px;
     }
     .hero p {
-        font-size: 16px;
-        margin-top: 20px;
+        font-size: 14px;
+        margin-top: 19.88px;
+        max-width: 300px;
+    }
+    .countdown {
+        max-width: 280px;
+        margin: 0 auto;
     }
     .curved {
-        display: none;
+        width: 40px;
+        height: 60px;
+        right: -45px;
+        left: auto;
+        top: -20px;
     }
     .clock {
         width: 20px;
@@ -159,10 +199,10 @@ h1 {
         margin-top: -.2rem;
     }
     .platform img {
-        height: 60px;
+        height: 65px;
     }
     .comingSoon p {
-        font-size: 60px;
+        font-size: 40px;
         line-height: 51.99px;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -186,5 +226,14 @@ h1 {
     }
     .scroll-container img {
         width: 90%;
+    }
+    .countdown p {
+        color:rgba(188, 235, 0, 1);
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 18.46px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
     }
   }
