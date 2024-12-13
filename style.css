@@ -69,15 +69,20 @@ h1 {
     background-position: center center;
     background-size: 60%;
 }
+.baseImage {
+    height: 523px;
+}
 .brightInside {
     top: 51.5%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 510px;
 }
 .brightInside1 {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 100px;
 }
 .image-stack {
     width: 300px;
@@ -91,7 +96,7 @@ h1 {
     width: 100%;
 }
 .scroll-container {
-    animation: scroll-vertical 10s linear infinite;
+    animation: scroll-vertical 30s linear infinite;
   }
 
   @keyframes scroll-vertical {
@@ -106,6 +111,9 @@ h1 {
     transform: translate(-50%, -50%);
     bottom: -10%;
     left: 50%;
+  }
+  .platform img {
+    height: 88px;
   }
   .comingSoon p {
     font-size: 100px;
@@ -151,13 +159,29 @@ h1 {
         margin-top: -.2rem;
     }
     .platform img {
-        height: 70px;
+        height: 60px;
     }
     .comingSoon p {
         font-size: 60px;
-        line-height: 141.99px;
+        line-height: 51.99px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .sticky-top-md {
         position: static; /* Remove stickiness on smaller screens */
+    }
+    .phone {
+        background-size: 100%;
+    }
+    .baseImage {
+        height: 460px;
+    }
+    .brightInside {
+        height: 447px;
+    }
+    .brightInside1 {
+        top: 18%;
+        width: 250px;
+        height: 75px;
     }
   }
